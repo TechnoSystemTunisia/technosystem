@@ -5,7 +5,7 @@ import { Roboto, Poppins } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Techno System Tunisie',
-  description: 'Entreprise specialiste Installation courant faible',
+  description: "Entreprise specialiste Installation courant faible et systeme d'alarme",
   icons: [{ rel: 'icon', url:"/public/techno-system-logo-square.png" }],
 }
 
