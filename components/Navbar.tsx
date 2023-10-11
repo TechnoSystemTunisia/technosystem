@@ -9,9 +9,9 @@ const Navbar = () => {
   return (
     <nav className="w-full flex justify-center h-[80px] border-b border-gray-400 px-4 sticky top-0 shadow-black shadow-sm bg-white dark:bg-[#121212] z-20">
       <div className='flex items-center justify-between w-full h-full max-w-[1460px]'>
-        <Link href={'/'} className='flex items-center gap-2 cursor-pointer'>
-            <Image src='/vercel.svg' width={55} height={40} alt='JSM logo' />
-            <h1 className='text-2xl font-bold font-sans'>Techno Sytem</h1>
+        <Link href={'/'} className='flex items-center cursor-pointer gap-2'>
+            <Image src='/techno-system-logo-square.png' width={70} height={70} alt='TS-logo' unoptimized={false} className='object-contain' />
+            <h1 className='text-2xl font-bold font-sans'>Techno System</h1>
         </Link>
         <HomeMenuList/>
         <div className='hidden lg:flex h-full items-center gap-4 text-xl'>

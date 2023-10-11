@@ -22,8 +22,8 @@ const ActivitySectors = () => {
             <p className={styles.subTitle}>Depuis le début, nous nous efforçons de construire une solide expérience dans domaines multiple</p>
           </div>
           <ul className='flex flex-wrap justify-center gap-8'>
-            {ActivitesList.map((activity)=>(
-              <ActivitiesCard key={activity.activityName} activityName={activity.activityName} activityDescription={activity.activityDescription} activityImage={activity.image}/>
+            {ActivitesList.map((activity, index)=>(
+              <ActivitiesCard key={activity.activityName} activityName={activity.activityName} activityDescription={activity.activityDescription} activityImage={activity.image} index={index}/>
             ))}
           </ul>
         </div>

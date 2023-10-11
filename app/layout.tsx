@@ -6,6 +6,7 @@ import { Roboto, Poppins } from 'next/font/google'
 export const metadata: Metadata = {
   title: 'Techno System Tunisie',
   description: 'Entreprise specialiste Installation courant faible',
+  icons: [{ rel: 'icon', url:"/public/techno-system-logo-square.png" }],
 }
 
 const roboto = Roboto({

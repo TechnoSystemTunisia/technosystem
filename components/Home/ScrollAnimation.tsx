@@ -10,9 +10,9 @@ const ScrollAnimation = () => {
     console.log('scrollYProgress', scrollYProgress);
   return (
     <motion.div
-    className="min-h-screen h-full border-blue-500 border-[1px] -z-10 "
-    style={{ scaleY: scrollYProgress }}
-  />
+      className="min-h-screen h-full border-blue-500 border-[1px] -z-10 "
+      style={{ scaleY: scrollYProgress }}
+    />
   )
 }
 

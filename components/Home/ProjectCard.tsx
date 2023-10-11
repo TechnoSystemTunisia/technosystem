@@ -10,14 +10,31 @@ import {
     AlertDialogTitle,
     AlertDialogTrigger,
   } from "@/components/ui/alert-dialog"
+import { motion } from "framer-motion";
 import Image from "next/image"
   
 
 const ProjectCard = ({ project, index} : any) => {
+    const variants = {
+        hidden: { opacity: 0, x: "100%" },
+        visible: { opacity: 1, x: 0 },
+        };
+
+        const transition = {
+        duration: 1,
+        delay: index * 0.2, // Adjust the delay based on the index
+        type: "spring", 
+        stiffness: 50
+        };
   return (
     <AlertDialog>
         <AlertDialogTrigger className={`col-span-1 ${(index === 0 || index === 5) && "lg:col-span-2"}`}>
-            <div className={`group  relative h-[300px] bg-white border border-gray-200 rounded-lg shadow shadow-black dark:shadow-white dark:bg-gray-800 dark:border-gray-700 overflow-hidden`}>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={variants}
+                transition={transition}
+                className={`group  relative h-[300px] bg-white border border-gray-200 rounded-lg shadow shadow-black dark:shadow-white dark:bg-gray-800 dark:border-gray-700 overflow-hidden`}>
                 <Image src={project.projectMainImage} width={150} height={300} alt='card-image' className='w-full h-full object-cover blur-[5px] opacity-90 absolute group-hover:blur-none' unoptimized={true}/>
                 <div className="flex h-full relative flex-col items-center justify-center p-4 text-center gap-4 text-white">
                     <a href="#">
@@ -31,7 +48,7 @@ const ProjectCard = ({ project, index} : any) => {
                     </svg>
                     </a>
                 </div>
-            </div>
+            </motion.div>
         </AlertDialogTrigger>
         <AlertDialogContent>
             <AlertDialogHeader>

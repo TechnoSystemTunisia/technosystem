@@ -13,7 +13,7 @@ const styles = {
 
 const PreviousProjects = () => {
   return (
-    <section id='previouProjects' className='flex flex-col items-center justify-center w-full p-4 min-h-[calc(100vh-80px)] border-b-2 border-gray-400'>
+    <section id='previouProjects' className='flex flex-col items-center justify-center w-full p-4 min-h-[calc(100vh-80px)] border-b-2 border-gray-400 overflow-hidden'>
     <div className='flex w-full h-full justify-center'>
       <ScrollAnimation/>
       <div className='flex flex-1 flex-col items-center justify-center m-4 max-w-[1460px] md:px-16 gap-10'>

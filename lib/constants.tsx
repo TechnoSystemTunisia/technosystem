@@ -105,3 +105,31 @@ export const PreviousProjectsList = [
         projectMainImage: '/HeroImage.jpg'
     } */
 ]
+
+export const clientsLogo = [
+    '/logos/mzabi-group-no-bg.png', 
+    '/logos/randa-group-no-bg.png',
+    '/logos/lavazza-group-no-bg.png',
+    '/logos/monoprix-group-no-bg.png',
+    '/logos/zen-group-no-bg.png', 
+    '/logos/hertz-group-no-bg.png',
+    '/logos/stir-group-no-bg.png',
+    '/logos/chemie-couleur-group-no-bg.png',
+    '/logos/royal-group-no-bg.png',
+    '/logos/mosaique-group-no-bg.png',
+    '/logos/italie-group-no-bg.png',     
+]
+
+export const suppliersLogo = [
+    '/logos/elkron-group-no-bg.png', 
+    '/logos/zkteko-group-no-bg.png',
+    '/logos/dahua-group-no-bg.png',
+    '/logos/hikvision-group-no-bg.png',
+    '/logos/panasonic-group-no-bg.png', 
+    '/logos/legrand-group-no-bg.png',
+    '/logos/urmet-group-no-bg.png',
+    '/logos/teletek-group-no-bg.png',
+    '/logos/motorline-group-no-bg.png',
+    '/logos/comelit-group-no-bg.png',
+    '/logos/lg-group-no-bg.png',     
+]
