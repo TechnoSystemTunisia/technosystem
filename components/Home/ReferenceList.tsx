@@ -100,9 +100,9 @@ export default function ReferenceList() {
                         <Image
                             src={supplier}
                             height={200}
-                            width={150}
+                            width={100}
                             alt="Client-Logo"
-                            className="object-contain h-[100px]"
+                            className="object-contain h-[100px] w-[140px]"
                             unoptimized={false}
                         />
                     </motion.div>
