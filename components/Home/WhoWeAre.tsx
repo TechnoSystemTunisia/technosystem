@@ -1,11 +1,29 @@
+"use client"
+
 import Image from 'next/image'
 import ScrollAnimation from './ScrollAnimation'
+import { motion, useInView } from 'framer-motion';
 
 const WhoWeAre = () => {
+
+  const variants = {
+    visible: { opacity: 1, scale: [0.85, 0.9, 0.95, 1], y: 0 },
+    hidden: {
+      opacity: 0,
+      scale: 0.8,
+      y: -200
+    }
+  };
   return (
     <section id='whoWeAre' className='flex items-center justify-center w-full p-4 min-h-[calc(100vh-80px)] border-b-2 border-gray-400'>
       <ScrollAnimation/>
-      <div className='flex flex-col  lg:flex-row-reverse items-center justify-center gap-20 px-4 my-4 max-w-[1460px]'>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={variants}
+        exit="hidden"
+        transition={{ duration: 2, ease: "easeOut" }}
+        className='flex flex-col  lg:flex-row-reverse items-center justify-center gap-20 px-4 my-4 max-w-[1460px]'>
         <div className='flex flex-col items-center lg:items-start justify-center lg:w-[50%] w-full gap-4'>
           <div className='flex flex-col items-center lg:items-start w-full'>
             <h1 className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 capitalize text-center lg:text-left text-4xl lg:text-5xl'>qui sommes nous</h1>
@@ -20,7 +38,7 @@ const WhoWeAre = () => {
         className='w-[500px] object-cover rounded-lg shadow-lg shadow-black dark:shadow-white flex justify-center'
         unoptimized={true}
         />
-      </div>
+      </motion.div>
   </section>  
   )
 }

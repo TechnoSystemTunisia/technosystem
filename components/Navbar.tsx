@@ -20,7 +20,6 @@ const Navbar = () => {
             <DarkModeButton/>
         </div>
         <SmallMenu/>
-
       </div>
     </nav>
   )
