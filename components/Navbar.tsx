@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="w-full flex justify-center h-[80px] border-b border-gray-400 px-4 sticky top-0 shadow-black shadow-sm bg-white dark:bg-[#121212] z-20">
       <div className='flex items-center justify-between w-full h-full max-w-[1460px]'>
         <Link href={'/'} className='flex items-center cursor-pointer gap-2'>
-            <Image src='/techno-system-logo-square.png' width={50} height={50} alt='TS-logo' unoptimized={false} className='object-contain' />
+            <Image src='/techno-system-logo-square.png' width={60} height={60} alt='TS-logo' unoptimized={false} className='object-contain' />
             <h1 className='text-2xl font-bold font-sans'>Techno System</h1>
         </Link>
         <HomeMenuList/>

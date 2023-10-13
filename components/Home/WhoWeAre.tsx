@@ -2,12 +2,12 @@
 
 import Image from 'next/image'
 import ScrollAnimation from './ScrollAnimation'
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const WhoWeAre = () => {
 
   const variants = {
-    visible: { opacity: 1, scale: [0.85, 0.9, 0.95, 1], y: 0 },
+    visible: { opacity: 1, scale: [0.85, 0.87, 0.89, 0.91, 0.93, 0.95, 0.97, 1], y: 0 },
     hidden: {
       opacity: 0,
       scale: 0.8,

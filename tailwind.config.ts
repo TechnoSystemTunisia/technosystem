@@ -57,7 +57,6 @@ module.exports = {
       },
       backgroundImage: {
         'hero-bg': "url('/Hero-section-bg-image.png')",
-        'blue-dotted-image-bg': "url('/blue-dotted-image-bg.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
