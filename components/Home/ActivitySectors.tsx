@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ActivitiesCard from '../ActivitiesCard'
 import { ActivitesList } from '@/lib/constants'
-import ScrollAnimation from './ScrollAnimation'
+import ScrollAnimation from '../ScrollAnimation'
 import ReferenceList from './ReferenceList'
 
 const styles = {

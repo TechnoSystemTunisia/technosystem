@@ -55,57 +55,6 @@ export const ActivitesList = [
     },
 ]
 
-export const PreviousProjectsList = [
-    {
-        projectName: "Project1",
-        projecDescription: "Project1 Description",
-        projectClient: "Project1 Client",
-        projectMainImage: '/HeroImage.jpg'
-    },
-    {
-        projectName: "Project2",
-        projecDescription: "Project2 Description",
-        projectClient: "Project2 Client",
-        projectMainImage: '/HeroImage.jpg'
-    },
-    {
-        projectName: "Project3",
-        projecDescription: "Project3 Description",
-        projectClient: "Project3 Client",
-        projectMainImage: '/HeroImage.jpg'
-    },
-    {
-        projectName: "Project4",
-        projecDescription: "Project4 Description",
-        projectClient: "Project4 Client",
-        projectMainImage: '/HeroImage.jpg'
-    },
-    {
-        projectName: "Project5",
-        projecDescription: "Project5 Description",
-        projectClient: "Project5 Client",
-        projectMainImage: '/HeroImage.jpg'
-    },
-    {
-        projectName: "Project6",
-        projecDescription: "Project6 Description",
-        projectClient: "Project6 Client",
-        projectMainImage: '/HeroImage.jpg'
-    },
-/*     {
-        projectName: "Project7",
-        projecDescription: "Project7 Description",
-        projectClient: "Project7 Client",
-        projectMainImage: '/HeroImage.jpg'
-    },
-    {
-        projectName: "Project8",
-        projecDescription: "Project8 Description",
-        projectClient: "Project8 Client",
-        projectMainImage: '/HeroImage.jpg'
-    } */
-]
-
 export const clientsLogo = [
     '/logos/mzabi-group-no-bg.png', 
     '/logos/randa-group-no-bg.png',
@@ -134,4 +83,111 @@ export const suppliersLogo = [
     '/logos/motorline-group-no-bg.png',
     '/logos/comelit-group-no-bg.png',
     '/logos/lg-group-no-bg.png' 
+]
+
+export const PreviousProjectsList = [
+    {
+        projectName: "Project 1",
+        projecDescription: "Project1 Description",
+        projectClient: "Project 1 Client",
+        projectImages:
+        [
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:50 
+            }
+        ]
+    },
+    {
+        projectName: "Project2",
+        projecDescription: "Project2 Description",
+        projectClient: "Project2 Client",
+        projectImages:
+        [
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:80
+            }
+        ]
+    },
+    {
+        projectName: "Project3",
+        projecDescription: "Project3 Description",
+        projectClient: "Project3 Client",
+        projectImages:
+        [
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:60 
+            }
+        ]
+    },
+    {
+        projectName: "Project4",
+        projecDescription: "Project4 Description",
+        projectClient: "Project4 Client",
+        projectImages:
+        [
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:100
+            }
+        ]
+    },
+    {
+        projectName: "Project5",
+        projecDescription: "Project5 Description",
+        projectClient: "Project5 Client",
+        projectImages:
+        [
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:90 
+            }
+        ]
+    },
+    {
+        projectName: "Project6",
+        projecDescription: "Project6 Description",
+        projectClient: "Project6 Client",
+        projectImages:
+        [
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:65 
+            }
+        ]
+    },
+     {
+        projectName: "Project7",
+        projecDescription: "Project7 Description",
+        projectClient: "Project7 Client",
+        projectImages:
+        [
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            }
+        ]
+    },
+    {
+        projectName: "Project8",
+        projecDescription: "Project8 Description",
+        projectClient: "Project8 Client",
+        projectImages:
+        [
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:60 
+            }
+        ]
+    } 
 ]

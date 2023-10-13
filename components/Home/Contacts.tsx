@@ -3,7 +3,7 @@
 import * as z from "zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import ScrollAnimation from "./ScrollAnimation";
+import ScrollAnimation from "../ScrollAnimation";
 
 const validationSchema = z.object({
   firstName: z.string().min(1, { message: "Prénom est obligatoire" }),

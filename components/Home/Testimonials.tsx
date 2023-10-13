@@ -1,5 +1,5 @@
 import React from 'react'
-import ScrollAnimation from './ScrollAnimation'
+import ScrollAnimation from '../ScrollAnimation'
 
 const styles = {
   title:"mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white capitalize",

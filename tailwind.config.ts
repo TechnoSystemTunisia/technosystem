@@ -77,6 +77,10 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      gridTemplateColumns: {
+        'gallery': 'repeat(auto-fit, minmax(350px, 1fr))',
+      },
+      visibility: ["group-hover"]
     },
   },
   plugins: [require("tailwindcss-animate")],

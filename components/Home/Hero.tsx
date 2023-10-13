@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion, useScroll } from "framer-motion";
-import ScrollAnimation from './ScrollAnimation';
+import ScrollAnimation from '../ScrollAnimation';
 
 const Hero = () => {
 
