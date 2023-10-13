@@ -5,8 +5,16 @@ import { Roboto, Poppins } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Techno System Tunisie',
-  description: "Entreprise specialiste Installation courant faible et systeme d'alarme",
-  icons: [{ rel: 'icon', url:"/public/techno-system-logo-square.png" }],
+  description: "Entreprise spécialisée Installation courant faible et systeme d'alarme",
+/*   icons: {
+    icon: '/techno-system-logo-square.png',
+    shortcut: '/techno-system-logo-square.png',
+    apple: '/techno-system-logo-square.png',
+    other: {
+      rel: 'tstunisia-icon',
+      url: '/techno-system-logo-square.png',
+    },
+  }, */
 }
 
 const roboto = Roboto({

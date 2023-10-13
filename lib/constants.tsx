@@ -117,11 +117,13 @@ export const clientsLogo = [
     '/logos/chemie-couleur-group-no-bg.png',
     '/logos/royal-group-no-bg.png',
     '/logos/mosaique-group-no-bg.png',
-    '/logos/italie-group-no-bg.png',     
+    '/logos/italie-group-no-bg.png',
+    '/logos/sopreco-group-no-bg.png'     
 ]
 
 export const suppliersLogo = [
     '/logos/elkron-group-no-bg.png', 
+    '/logos/technoalarm-group-no-bg.png',    
     '/logos/zkteko-group-no-bg.png',
     '/logos/dahua-group-no-bg.png',
     '/logos/hikvision-group-no-bg.png',
@@ -131,5 +133,5 @@ export const suppliersLogo = [
     '/logos/teletek-group-no-bg.png',
     '/logos/motorline-group-no-bg.png',
     '/logos/comelit-group-no-bg.png',
-    '/logos/lg-group-no-bg.png',     
+    '/logos/lg-group-no-bg.png' 
 ]

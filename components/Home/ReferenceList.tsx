@@ -45,7 +45,7 @@ export default function ReferenceList() {
             </motion.div>
             {/* SMAL SCREEN */}
             <motion.div
-                className="flex flex-wrap items-center lg:hidden w-full gap-2"
+                className="flex flex-wrap items-center lg:hidden w-full gap-2 justify-center"
             >
                 {clientsLogo.map((client, index) => ( 
                     <motion.div
@@ -88,7 +88,7 @@ export default function ReferenceList() {
             </motion.div>
             {/* SMAL SCREEN */}
             <motion.div
-                className="flex flex-wrap items-center lg:hidden w-full gap-4"
+                className="flex flex-wrap items-center lg:hidden w-full gap-4 justify-center"
             >
                 {suppliersLogo.map((supplier, index) => ( 
                     <motion.div
