@@ -11,8 +11,9 @@ import {
     AlertDialogTrigger,
   } from "@/components/ui/alert-dialog"
 import Image from "next/image"
+import Link from "next/link"
 
-/* type ProjectProps = {
+type ProjectProps = {
         projectName: string,
         projecDescription: string,
         projectClient: string,
@@ -23,10 +24,10 @@ type ImageProps = {
     url: string,
     width: number,
     height: number,
-} */
+}
   
 
-const ProjectCardVertical = ({ project, index} : {project: any, index:number}) => {
+const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:number}) => {
     const widthHeightRatio = project.projectImages[0].height / project.projectImages[0].width
     const galleryHeight = Math.ceil(350 * widthHeightRatio)
     const photoSpans = Math.ceil(galleryHeight / 10) + 1
