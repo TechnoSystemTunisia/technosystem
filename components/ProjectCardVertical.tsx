@@ -64,8 +64,9 @@ const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:n
             </AlertDialogHeader>
             <AlertDialogDescription className="flex flex-col w-full gap-2 max-h-[500px] overflow-y-scroll p-2">
                 {
-                    project.projectImages.map((image)=>(
+                    project.projectImages.map((image, index)=>(
                         <Image
+                            key={index}
                             src={image.url}
                             alt="project-image"
                             width={image.width}
