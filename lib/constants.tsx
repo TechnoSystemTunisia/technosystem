@@ -95,7 +95,22 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:50 
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
             }
         ]
     },
@@ -108,7 +123,22 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:80
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
             }
         ]
     },
@@ -121,7 +151,22 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:60 
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
             }
         ]
     },
@@ -134,7 +179,22 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:100
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
             }
         ]
     },
@@ -147,7 +207,22 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:90 
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
             }
         ]
     },
@@ -160,7 +235,22 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:65 
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
             }
         ]
     },
@@ -170,6 +260,21 @@ export const PreviousProjectsList = [
         projectClient: "Project7 Client",
         projectImages:
         [
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
             {
                 url:'/HeroImage.jpg',
                 width:200,
@@ -186,7 +291,22 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:60 
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/HeroImage.jpg',
+                width:200,
+                height:55 
             }
         ]
     } 
