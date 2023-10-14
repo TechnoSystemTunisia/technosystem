@@ -33,7 +33,7 @@ const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:n
     
   return (
     <AlertDialog>
-        <AlertDialogTrigger className="group relative w-full lg:w-[350px] justify-self-center rounded-md cursor-pointer overflow-hidden"
+        <AlertDialogTrigger className={`group relative h-full w-full lg:w-[350px] justify-self-center rounded-md cursor-pointer overflow-hidden bg-blue-600`}
             style={{ gridRow: `span ${photoSpans}` }}>
                 <Image
                     src={project.projectImages[0].url}

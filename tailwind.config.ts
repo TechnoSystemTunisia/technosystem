@@ -79,8 +79,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         'gallery': 'repeat(auto-fit, minmax(350px, 1fr))',
-      },
-      visibility: ["group-hover"]
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

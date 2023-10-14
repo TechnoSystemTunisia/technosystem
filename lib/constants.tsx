@@ -95,7 +95,7 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:55 
+                height:40 
             },
             {
                 url:'/HeroImage.jpg',
@@ -123,7 +123,7 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:55 
+                height:60 
             },
             {
                 url:'/HeroImage.jpg',
@@ -179,7 +179,7 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:55 
+                height:60 
             },
             {
                 url:'/HeroImage.jpg',
@@ -207,7 +207,7 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:55 
+                height:65 
             },
             {
                 url:'/HeroImage.jpg',
@@ -235,7 +235,7 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:55 
+                height:50 
             },
             {
                 url:'/HeroImage.jpg',
@@ -263,7 +263,7 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:55 
+                height:60 
             },
             {
                 url:'/HeroImage.jpg',
@@ -291,7 +291,7 @@ export const PreviousProjectsList = [
             {
                 url:'/HeroImage.jpg',
                 width:200,
-                height:55 
+                height:45 
             },
             {
                 url:'/HeroImage.jpg',
