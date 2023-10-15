@@ -87,227 +87,216 @@ export const suppliersLogo = [
 
 export const PreviousProjectsList = [
     {
-        projectName: "Project 1",
-        projecDescription: "Project1 Description",
-        projectClient: "Project 1 Client",
+        projectName: "Fourniture et installation courant faible",
+        projecDescription: "Camera surveillance, systeme anti-instrusion, fibre optique, reseau informatique, telephonique",
+        projectClient: "Group Mzabi",
         projectImages:
         [
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/mzabi/mzabi-image-001.jpg',
                 width:200,
                 height:40 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/mzabi/mzabi-image-002.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/mzabi/mzabi-image-003.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/mzabi/mzabi-image-004.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/mzabi/mzabi-image-005.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/mzabi/mzabi-image-006.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/mzabi/mzabi-image-007.jpg',
                 width:200,
                 height:55 
             }
         ]
     },
     {
-        projectName: "Project2",
-        projecDescription: "Project2 Description",
-        projectClient: "Project2 Client",
+        projectName: "Fourniture et installation courant faible et eclairage",
+        projectClient: "Elcom"  ,
+        projecDescription: "Camera surveillance, systeme anti-instrusion, fibre optique, reseau informatique, voix-Ip, eclairage",
         projectImages:
         [
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/elcom/image-elcom-001.jpg',
                 width:200,
                 height:60 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/elcom/image-elcom-002.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/elcom/image-elcom-003.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/elcom/image-elcom-004.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/elcom/image-elcom-005.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/elcom/image-elcom-006.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/elcom/image-elcom-007.jpg',
                 width:200,
                 height:55 
             }
         ]
     },
     {
-        projectName: "Project3",
-        projecDescription: "Project3 Description",
-        projectClient: "Project3 Client",
+        projectName: "Fourniture et installation courant faible",
+        projecDescription: "Camera surveillance, systeme anti-instrusion, fibre optique, reseau informatique, telephonique",
+        projectClient: "CGM",
         projectImages:
         [
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/cgm/image-cgm-001.jpg',
+                width:200,
+                height:40 
+            },
+            {
+                url:'/projets/cgm/image-cgm-002.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/cgm/image-cgm-003.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/cgm/image-cgm-004.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/cgm/image-cgm-005.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/cgm/image-cgm-006.jpg',
                 width:200,
                 height:55 
             }
         ]
     },
     {
-        projectName: "Project4",
-        projecDescription: "Project4 Description",
-        projectClient: "Project4 Client",
+        projectName: "Fourniture et installation courant faible",
+        projecDescription: "Reseau informatique, systeme TV  ",
+        projectClient: "Hotel Regency Gammaret",
         projectImages:
         [
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/regency/image-regency-001.jpg',
                 width:200,
                 height:60 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/regency/image-regency-002.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/regency/image-regency-003.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/regency/image-regency-004.jpg',
                 width:200,
                 height:55 
-            }
+            },
+            {
+                url:'/projets/regency/image-regency-005.jpg',
+                width:200,
+                height:55 
+            },
         ]
     },
     {
-        projectName: "Project5",
-        projecDescription: "Project5 Description",
-        projectClient: "Project5 Client",
+        projectName: "Fourniture et installation courant faible",
+        projecDescription: "Cameras de surveillance, Point d'acces,",
+        projectClient: "Monoprix",
         projectImages:
         [
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/monoprix/image-monoprix-001.jpg',
                 width:200,
-                height:65 
+                height:60 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/monoprix/image-monoprix-002.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/monoprix/image-monoprix-003.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/monoprix/image-monoprix-004.jpg',
                 width:200,
                 height:55 
-            }
+            },
+            {
+                url:'/projets/monoprix/image-monoprix-005.jpg',
+                width:200,
+                height:55 
+            },
         ]
     },
     {
-        projectName: "Project6",
-        projecDescription: "Project6 Description",
-        projectClient: "Project6 Client",
+        projectName: "Fourniture et installation courant faible",
+        projecDescription: "Cameras De Surveillance",
+        projectClient: "Ste BMB",
         projectImages:
         [
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/bmb/image-bmb-001.jpg',
                 width:200,
                 height:50 
             },
             {
-                url:'/HeroImage.jpg',
+                url:'/projets/bmb/image-bmb-002.jpg',
                 width:200,
                 height:55 
             },
             {
-                url:'/HeroImage.jpg',
-                width:200,
-                height:55 
-            },
-            {
-                url:'/HeroImage.jpg',
+                url:'/projets/bmb/image-bmb-003.jpg',
                 width:200,
                 height:55 
             }
         ]
-    },
-     {
-        projectName: "Project7",
-        projecDescription: "Project7 Description",
-        projectClient: "Project7 Client",
-        projectImages:
-        [
-            {
-                url:'/HeroImage.jpg',
-                width:200,
-                height:60 
-            },
-            {
-                url:'/HeroImage.jpg',
-                width:200,
-                height:55 
-            },
-            {
-                url:'/HeroImage.jpg',
-                width:200,
-                height:55 
-            },
-            {
-                url:'/HeroImage.jpg',
-                width:200,
-                height:55 
-            }
-        ]
-    },
-    {
-        projectName: "Project8",
-        projecDescription: "Project8 Description",
-        projectClient: "Project8 Client",
-        projectImages:
-        [
-            {
-                url:'/HeroImage.jpg',
-                width:200,
-                height:45 
-            },
-            {
-                url:'/HeroImage.jpg',
-                width:200,
-                height:55 
-            },
-            {
-                url:'/HeroImage.jpg',
-                width:200,
-                height:55 
-            },
-            {
-                url:'/HeroImage.jpg',
-                width:200,
-                height:55 
-            }
-        ]
-    } 
+    }
 ]
