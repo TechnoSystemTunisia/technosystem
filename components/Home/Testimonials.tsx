@@ -1,5 +1,7 @@
 import React from 'react'
 import ScrollAnimation from '../ScrollAnimation'
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 const styles = {
   title:"mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white capitalize",
@@ -16,64 +18,70 @@ const Testimonials = () => {
         <div className="py-8 px-4 text-center lg:py-16 lg:px-6">
           <div>
             <h2 className={styles.title}>Témoignages</h2>
-            <p className={styles.subTitle}>Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+            <p className={styles.subTitle}>\Avis de nos clients fidele</p>
           </div> 
           <div className="grid mb-8 lg:mb-12 lg:grid-cols-2">
             <figure className={styles.figureClass}>
               <blockquote className="mx-auto mb-8 text-gray-500 dark:text-gray-400">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Speechless with how easy this was to integrate</h3>
-                <p className="my-4">"I recently got my hands on Flowbite Pro, and holy crap, I'm speechless with how easy this was to integrate within my application. Most templates are a pain, code is scattered, and near impossible to theme.</p>
-                <p className="my-4">Flowbite has code in one place and I'm not joking when I say it took me a matter of minutes to copy the code, customise it and integrate within a Laravel + Vue application.</p>
-                <p className="my-4">If you care for your time, I hands down would go with this."</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Service Exemplaire et Installation Parfaite</h3>
+                <p className="my-4">"L'équipe a dépassé nos attentes avec son professionnalisme et l'installation impeccable de notre [produit/service]. Nous sommes pleinement satisfaits de leur dévouement envers un travail de qualité."</p>
               </blockquote>
               <figcaption className="flex justify-center items-center space-x-3">
-                <img className="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture" />
+                <Avatar>
+                  <AvatarImage src="/Avatar.png" />
+                  <AvatarFallback>CG</AvatarFallback>
+                </Avatar>
                 <div className="space-y-0.5 font-medium dark:text-white text-left">
-                  <div>Bonnie Green</div>
-                  <div className="text-sm font-light text-gray-500 dark:text-gray-400">Developer at Open AI</div>
+                  <div>CGM</div>
+                  <div className="text-sm font-light text-gray-500 dark:text-gray-400">Directeur CGM</div>
                 </div>
               </figcaption>    
             </figure>
             <figure className={styles.figureClass}>
               <blockquote className="mx-auto mb-8 text-gray-500 dark:text-gray-400">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
-                <p className="my-4">"FlowBite provides a robust set of design tokens and components based on the popular Tailwind CSS framework. From the most used UI components like forms and navigation bars to the whole app screens designed both for desktop and mobile, this UI kit provides a solid foundation for any project.</p>
-                <p className="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Service Sans Faille et Artisanat Expert</h3>
+                <p className="my-4">"Notre expérience avec Techno System a été caractérisée par l'installation en douceur de notre service, grâce à leur équipe hautement professionnelle. Leur savoir-faire est vraiment exemplaire."</p>
               </blockquote>
               <figcaption className="flex justify-center items-center space-x-3">
-                <img className="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture" />
+                <Avatar>
+                  <AvatarImage src="/Avatar.png" />
+                  <AvatarFallback>MZ</AvatarFallback>
+                </Avatar>
                 <div className="space-y-0.5 font-medium dark:text-white text-left">
-                  <div>Roberta Casas</div>
-                  <div className="text-sm font-light text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
+                  <div>Mzabi</div>
+                  <div className="text-sm font-light text-gray-500 dark:text-gray-400">Group Mzabi</div>
                 </div>
               </figcaption>    
             </figure>
             <figure className={styles.figureClass}>
               <blockquote className="mx-auto mb-8 text-gray-500 dark:text-gray-400">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow and variants</h3>
-                <p className="my-4">"As someone who mainly designs in the browser, I've been a casual user of Figma, but as soon as I saw and started playing with FlowBite my mind was 🤯.</p>
-                <p className="my-4">Everything is so well structured and simple to use (I've learnt so much about Figma by just using the toolkit).</p>
-                <p className="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Une Équipe digne de Confiance pour des Résultats Exceptionnels</h3>
+                <p className="my-4">"Du début à la fin, Techno System a démontré un professionnalisme exceptionnel lors de l'installation de notre [produit/service]. Nous n'aurions pas pu demander une équipe plus fiable et compétente."</p>
               </blockquote>
               <figcaption className="flex justify-center items-center space-x-3">
-                <img className="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture" />
+                <Avatar>
+                  <AvatarImage src="/Avatar.png" />
+                  <AvatarFallback>BM</AvatarFallback>
+                </Avatar>
                 <div className="space-y-0.5 font-medium dark:text-white text-left">
-                  <div>Jese Leos</div>
-                  <div className="text-sm font-light text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
+                  <div>BMB</div>
+                  <div className="text-sm font-light text-gray-500 dark:text-gray-400">BMB</div>
                 </div>
               </figcaption>    
             </figure>
             <figure className={styles.figureClass}>
               <blockquote className="mx-auto mb-8 text-gray-500 dark:text-gray-400">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
-                <p className="my-4">"This is a very complex and beautiful set of elements. Under the hood it comes with the best things from 2 different worlds: Figma and Tailwind.</p>
-                <p className="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Établir la Norme de l'Excellence en Installation</h3>
+                <p className="my-4">"Les installations ont été mises en place avec une nouvelle norme d'excellence. Le professionnalisme et l'expertise de leur équipe sont inégalés, et nous sommes extrêmement satisfaits des résultats."</p>
               </blockquote>
               <figcaption className="flex justify-center items-center space-x-3">
-                <img className="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture" />
+                <Avatar>
+                  <AvatarImage src="/Avatar.png" />
+                  <AvatarFallback>RG</AvatarFallback>
+                </Avatar>
                 <div className="space-y-0.5 font-medium dark:text-white text-left">
-                  <div>Joseph McFall</div>
-                  <div className="text-sm font-light text-gray-500 dark:text-gray-400">CTO at Google</div>
+                  <div>Hotel Regency Gammaret</div>
+                  <div className="text-sm font-light text-gray-500 dark:text-gray-400">Hotel Regency Gammaret</div>
                 </div>
               </figcaption>    
             </figure>
