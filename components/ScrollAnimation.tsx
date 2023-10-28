@@ -7,7 +7,7 @@ const ScrollAnimation = () => {
     const { scrollYProgress } = useScroll({
       offset:["0 0.1", "1 1.33"]
     });
-    console.log('scrollYProgress', scrollYProgress);
+
   return (
     <motion.div
       className="min-h-screen h-full border-blue-500 border-[1px] -z-10 "
