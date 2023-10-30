@@ -18,24 +18,28 @@ export const sendEmail = async (
       },
     })
 
-    const emailResponce = await transporter.sendMail({
-      from: 
-        {
-          name: text,
-          address: email
-        },
-      to: process.env.NODEMAILER_USER,
-      subject: subject,
-      text: text,
-      html: html,
-    },(error, info) => {
-      if (error) {
-        return("Error sending email: " + error);
-      } else {
-        return("Email sent...: " + info.response);
-      }
+    await new Promise((resolve, reject) => {
+      transporter.sendMail({
+        from: 
+          {
+            name: text,
+            address: email
+          },
+        to: process.env.NODEMAILER_USER,
+        subject: subject,
+        text: text,
+        html: html,
+      },(error, info) => {
+        if (error) {
+          reject(error);
+          return("Error sending email: " + error);
+        } else {
+          resolve(info);
+          return("Email sent...: " + info.response);
+        }
+      })
     })
-    return emailResponce
+
   } catch (error) {
     console.log(`Quelque chose s'est mal passé ${error}, réessayer`);
   }
