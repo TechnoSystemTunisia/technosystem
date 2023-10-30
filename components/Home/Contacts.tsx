@@ -37,6 +37,7 @@ const Contacts= () => {
   });
   const { toast } = useToast()
 
+  //HANDLE EMAIL SENDING AND NOTIFICATION
   const onSubmit: SubmitHandler<ValidationSchema> = async (email) => {
      try {
       const {data} = await axios.post(`${API_URL}/sendEmail`, { emailData:email }, {
