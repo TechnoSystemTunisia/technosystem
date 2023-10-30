@@ -4,6 +4,8 @@ import HomeIcons from "@/components/icons/HomeIcons";
 import InfosIcon from "@/components/icons/InfosIcon";
 import WrenchScrewIcon from "@/components/icons/WrenchScrewIcon";
 
+export const API_URL = process.env.NEXT_PUBLIC_API_URL
+
 export const NavbarLinks = [
     {
         name: "À Propos",

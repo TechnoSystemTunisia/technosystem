@@ -1,6 +1,5 @@
 import ThemeWrapper from '@/components/ThemeWrapper'
 import './globals.css'
-import type { Metadata } from 'next'
 import { Roboto, Poppins } from 'next/font/google'
 import { siteMetadata } from '@/lib/siteMetadata';
 
@@ -61,7 +60,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${roboto.variable} ${poppins.variable}`}>
       <body className='min-h-screen w-full'>
-      <ThemeWrapper>{children}</ThemeWrapper></body>
+        <ThemeWrapper>{children}</ThemeWrapper>
+      </body>
     </html>
   )
 }

@@ -4,10 +4,18 @@ import * as z from "zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import ScrollAnimation from "../ScrollAnimation";
+import axios from "axios"
+import { API_URL } from "@/lib/constants";
+import { useToast } from "../ui/use-toast";
 
 const validationSchema = z.object({
   firstName: z.string().min(1, { message: "Prénom est obligatoire" }),
-  lastName: z.string().min(1, { message: "Nom est obligatoire" }),
+  email: z
+  .string()
+  .min(1, { message: "Addresse Mail est obligatoire" })
+  .email({
+    message: "Doit être un e-mail valide",
+  }),
   phone: z.string().min(8, {
     message: "Numéro de téléphone doit comporter au moins 8 caractères",
   }),
@@ -27,15 +35,30 @@ const Contacts= () => {
     mode: "onChange",
     resolver: zodResolver(validationSchema),
   });
+  const { toast } = useToast()
 
-  const onSubmit: SubmitHandler<ValidationSchema> = async (data) => {
-    try {
+  const onSubmit: SubmitHandler<ValidationSchema> = async (email) => {
+     try {
+      const {data} = await axios.post(`${API_URL}/sendEmail`, { emailData:email }, {
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      })
+      toast({
+        title: "E-mail envoyé avec succès",
+        description: "Notre agent vous contactera bientôt",
+      })
       setValue("firstName", "");
-      setValue("lastName", "");
+      setValue("email", "");
       setValue("phone", "");
       setValue("subject", "");
-      setValue("message", "");
-    } catch (error) {}
+      setValue("message", ""); 
+    } catch (error) {
+      toast({
+        title: "Erreur Envoi Email ",
+        description: `Une erreur s'est produite ${error}`,
+      })
+    }
   };
 
   const styles = {
@@ -77,16 +100,16 @@ const Contacts= () => {
           <div className="mb-4 w-full md:mb-0 md:mr-2">
             <input
               className={`w-full border bg-transparent px-3 py-2 text-sm leading-tight text-black dark:text-white  placeholder-black dark:placeholder-white  ${
-                errors.firstName ? "border-red-500" : "border-black dark:border-white "
+                errors.email ? "border-red-500" : "border-black dark:border-white "
               } focus:shadow-outline appearance-none rounded-lg focus:border-blue-500 focus:outline-none`}
-              id="lastName"
-              type="text"
-              placeholder="Nom"
-              {...register("lastName")}
+              id="email"
+              type="email"
+              placeholder="Email"
+              {...register("email")}
             />
-            {errors.lastName && (
+            {errors.email && (
               <p className="mt-2 text-xs italic text-red-500">
-                {errors.lastName?.message}
+                {errors.email?.message}
               </p>
             )}
           </div>

@@ -25,7 +25,7 @@ const PreviousProjects = () => {
           </div>
           <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 z-0 w-full'>
             {PreviousProjectsList.slice(0,6).map((project, index)=>(
-              <ProjectCard key={project.projectName} project={project} index={index}/>
+              <ProjectCard key={`projectCard${index}`} project={project} index={index}/>
             ))}
           </ul>
           <Link href={"/previousProjects"}>

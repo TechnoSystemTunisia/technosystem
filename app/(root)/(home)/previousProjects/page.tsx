@@ -9,7 +9,7 @@ const PreviousProjects = () => {
         {
           PreviousProjectsList.map((project, index) => 
             (
-              <ProjectCardVertical key={project.projectName} project={project} index={index}/>
+              <ProjectCardVertical key={`projectCardVertical${index}`} project={project} index={index}/>
             )
           )
         }
