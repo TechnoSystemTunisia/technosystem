@@ -42,7 +42,7 @@ const Contacts= () => {
   //HANDLE EMAIL SENDING AND NOTIFICATION
   const onSubmit: SubmitHandler<ValidationSchema> = async (email) => {
      try {
-      const {data} = await axios.post(`${API_URL}/sendEmail`, { emailData:email }, {
+      const {data} = await axios.post(`${API_URL}/api/sendEmail`, { emailData:email }, {
         headers: {
           'Content-Type': 'application/json',
         }
