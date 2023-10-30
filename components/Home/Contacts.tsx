@@ -8,6 +8,8 @@ import axios from "axios"
 import { API_URL } from "@/lib/constants";
 import { useToast } from "../ui/use-toast";
 
+
+//USE ZOD FOR FORM DATA VALIDATION
 const validationSchema = z.object({
   firstName: z.string().min(1, { message: "Prénom est obligatoire" }),
   email: z
