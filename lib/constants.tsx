@@ -9,13 +9,13 @@ export const API_URL = process.env.NEXT_PUBLIC_API_URL
 export const NavbarLinks = [
     {
         name: "À Propos",
-        link: "#about",
+        link: `${API_URL}/#about`,
         element: "about",
         icon: <HomeIcons iconClass='w-10 h-10'/>
     },
     {
         name: "Qui Sommes Nous",
-        link: "#whoWeAre",
+        link: `${API_URL}/#whoWeAre`,
         element: "whoWeAre",
         icon: <BookOpenIcon iconClass='w-10 h-10'/>
     },
@@ -27,13 +27,13 @@ export const NavbarLinks = [
     },
     {
         name: "Projets",
-        link: "#previouProjects",
+        link: `${API_URL}/#previouProjects`,
         element: "projects",
         icon: <ChartBarIcon iconClass='w-10 h-10'/>
     },
     {
         name: "Contacts",
-        link: "#contacts",
+        link: `${API_URL}/#contacts`,
         element: "contacts",
         icon: <InfosIcon iconClass='w-10 h-10'/>
     }

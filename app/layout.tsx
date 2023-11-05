@@ -10,13 +10,16 @@ export const metadata = {
     default: siteMetadata.title, // a default is required when creating a template
   },
   description: siteMetadata.description,
+  keywords: {
+    default: ['alarme', 'instrusion', 'camera', 'surveillance', 'courant faible', 'courant fort', 'barrière infra rouge', 'installation', 'fourniture', 'électrique', 'informatique', "point d'accès", "controle d'accès", 'techno system', 'ts tunisia'],
+  },
   openGraph: {
     title: siteMetadata.title,
     description: siteMetadata.description,
     url: siteMetadata.siteUrl,
     siteName: siteMetadata.title,
     //images: [siteMetadata.socialBanner],
-    locale: "fr_FR",
+    locale: "tn_TN",
     type: "website",
   },
   robots: {
