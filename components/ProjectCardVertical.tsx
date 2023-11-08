@@ -12,6 +12,16 @@ import {
   } from "@/components/ui/alert-dialog"
 import Image from "next/image"
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+// import required modules
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+
 type ProjectProps = {
         projectName: string,
         projecDescription: string,
@@ -62,20 +72,39 @@ const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:n
                 {project.projecDescription}
             </AlertDialogDescription>
             </AlertDialogHeader>
-            <AlertDialogDescription className="flex flex-col w-full gap-2 max-h-[500px] overflow-y-scroll p-2">
-                {
+            <AlertDialogDescription className="flex flex-col w-full gap-2 max-h-[500px] overflow-y-auto p-2">
+                <Swiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                    }}
+                    pagination={true}
+                    modules={[EffectCoverflow, Pagination]}
+                    className="mySwiper"
+                >
+                    {
                     project.projectImages.map((image, index)=>(
-                        <Image
-                            key={index}
-                            src={image.url}
-                            alt="project-image"
-                            width={image.width}
-                            height={image.height}
-                            className="h-full w-full object-cover rounded-md"
-                            unoptimized={true}
-                        />
+                        <SwiperSlide>
+                            <Image
+                                key={index}
+                                src={image.url}
+                                alt="project-image"
+                                width={image.width}
+                                height={image.height}
+                                className="h-full w-full object-cover rounded-md"
+                                unoptimized={true}
+                            />
+                        </SwiperSlide>
                     ))
-                } 
+                    }             
+                </Swiper>
             </AlertDialogDescription>
             <AlertDialogFooter>
             <AlertDialogCancel>Fermer</AlertDialogCancel>
