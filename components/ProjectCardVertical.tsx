@@ -91,7 +91,7 @@ const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:n
                 >
                     {
                     project.projectImages.map((image, index)=>(
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <Image
                                 key={index}
                                 src={image.url}
