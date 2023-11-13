@@ -300,5 +300,38 @@ export const PreviousProjectsList = [
                 height:55 
             }
         ]
+    },
+    {
+        projectName: "Fourniture et installation système alarme",
+        projecDescription: "Detection incendie et alarme",
+        projectClient: "Ste Bonelle Soliman",
+        projectImages:
+        [
+            {
+                url:'/projets/bonal/image-bonal-001.jpg',
+                width:200,
+                height:50 
+            },
+            {
+                url:'/projets/bonal/image-bonal-002.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/bonal/image-bonal-003.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/bonal/image-bonal-004.jpg',
+                width:200,
+                height:55 
+            },
+            {
+                url:'/projets/bonal/image-bonal-004.jpg',
+                width:200,
+                height:55 
+            }
+        ]
     }
 ]
