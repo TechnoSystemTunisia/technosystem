@@ -17,7 +17,7 @@ type ProjectProps = {
     projectName: string,
     projecDescription: string,
     projectClient: string,
-    projectImages: ImageProps[]
+    imageUrls: ImageProps[]
 }
 
 type ImageProps = {
@@ -48,7 +48,7 @@ const ProjectCard = ({ project, index} : {project: ProjectProps, index:number}) 
                 variants={variants}
                 transition={transition}
                 className={`group  relative h-[300px] bg-white border border-gray-200 rounded-lg shadow shadow-black dark:shadow-white dark:bg-gray-800 dark:border-gray-700 overflow-hidden`}>
-                <Image src={project.projectImages[0].url} width={150} height={300} alt='card-image' className='w-full h-full object-cover blur-[5px] opacity-90 absolute group-hover:blur-none' unoptimized={true}/>
+                <Image src={project.imageUrls[0].url} width={150} height={300} alt='card-image' className='w-full h-full object-cover blur-[5px] opacity-90 absolute group-hover:blur-none' unoptimized={true}/>
                 <div className="flex h-full relative flex-col items-center justify-center p-4 text-center gap-4 text-white">
                     <a href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight">{project.projectName}</h5>

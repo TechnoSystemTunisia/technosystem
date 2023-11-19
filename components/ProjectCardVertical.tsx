@@ -26,7 +26,7 @@ type ProjectProps = {
         projectName: string,
         projecDescription: string,
         projectClient: string,
-        projectImages: ImageProps[]
+        imageUrls: ImageProps[]
 }
 
 type ImageProps = {
@@ -37,7 +37,7 @@ type ImageProps = {
   
 
 const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:number}) => {
-    const widthHeightRatio = project.projectImages[0].height / project.projectImages[0].width
+    const widthHeightRatio = project.imageUrls[0].height / project.imageUrls[0].width
     const galleryHeight = Math.ceil(350 * widthHeightRatio)
     const photoSpans = Math.ceil(galleryHeight / 10) + 1
     
@@ -46,10 +46,10 @@ const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:n
         <AlertDialogTrigger className={`group relative h-full w-full lg:w-[350px] justify-self-center rounded-md cursor-pointer overflow-hidden bg-blue-600`}
             style={{ gridRow: `span ${photoSpans}` }}>
                 <Image
-                    src={project.projectImages[0].url}
+                    src={project.imageUrls[0].url}
                     alt="project-image"
-                    width={project.projectImages[0].width}
-                    height={project.projectImages[0].height}
+                    width={project.imageUrls[0].width}
+                    height={project.imageUrls[0].height}
                     className="h-full w-full object-cover absolute top-0"
                     unoptimized={true}
                 />
@@ -90,7 +90,7 @@ const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:n
                     className="mySwiper"
                 >
                     {
-                    project.projectImages.map((image, index)=>(
+                    project.imageUrls.map((image, index)=>(
                         <SwiperSlide key={index}>
                             <Image
                                 key={index}
