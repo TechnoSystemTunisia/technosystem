@@ -8,7 +8,7 @@ export default function Home() {
       <ActivitySectors/>
       <PreviousProjects/>
       <Testimonials/>
-      <Contacts/>  
+      <Contacts/> 
     </main>
   )
 }

@@ -5,6 +5,7 @@ import InfosIcon from "@/components/icons/InfosIcon";
 import WrenchScrewIcon from "@/components/icons/WrenchScrewIcon";
 
 export const API_URL = process.env.NEXT_PUBLIC_API_URL
+export const WHATSAPPNUMBER = process.env.NEXT_PUBLIC_WHATSAPPNUMBER
 
 export const NavbarLinks = [
     {

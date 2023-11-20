@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer"
+import { WhatsUp } from "@/components/Home"
 import Navbar from "@/components/Navbar"
 
 
@@ -12,6 +13,7 @@ export default function HomeLayout({
   <Navbar/>
   <main className="flex flex-col w-full h-full">{children}</main>
   <Footer/>
+  <WhatsUp />
 </main>
   )
 }
