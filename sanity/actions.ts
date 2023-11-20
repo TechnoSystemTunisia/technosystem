@@ -22,12 +22,10 @@ export const getResources = async () => {
               width
             }
           }`
-      );
-      console.log("resources", resources);
-      
+      );      
       return resources;
     } catch (error) {
-      return(error);
+      alert(`Quelque chose s'est mal passé ${error}, réessayer`);
     }
 } 
 
@@ -50,6 +48,6 @@ export const getLatestResources = async () => {
       ); 
       return resources;
     } catch (error) {
-      return(error);
+      alert(`Quelque chose s'est mal passé ${error}, réessayer`);
     }
 } 

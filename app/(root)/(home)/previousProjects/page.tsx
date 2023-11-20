@@ -2,6 +2,8 @@ import ProjectCardVertical from '@/components/ProjectCardVertical'
 import LoadingSpinner from '@/components/icons/LoadingSpinner'
 import { getResources } from '@/sanity/actions'
 
+export const revalidate = 86400;
+
 const PreviousProjects = async () => {
   const projects  = await getResources()
 

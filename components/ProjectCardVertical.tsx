@@ -58,7 +58,7 @@ const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:n
                     <p className="mb-3 font-normal">{project.projecDescription}</p>
                 </div>
         </AlertDialogTrigger>
-        <AlertDialogContent className="w-screen h-screen">
+        <AlertDialogContent>
             <AlertDialogHeader>
             <AlertDialogTitle>
                 <span className="text-xl font-semibold">Projet: </span>

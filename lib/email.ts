@@ -41,6 +41,6 @@ export const sendEmail = async (
     })
 
   } catch (error) {
-    console.log(`Quelque chose s'est mal passé ${error}, réessayer`);
+    alert(`Quelque chose s'est mal passé ${error}, réessayer`);
   }
 }

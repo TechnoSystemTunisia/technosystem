@@ -11,6 +11,7 @@ const styles = {
   subTitle:"mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"
 }
 
+export const revalidate = 86400;
 
 const PreviousProjects = async () => {
   const projects  = await getLatestResources()
