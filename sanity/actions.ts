@@ -2,13 +2,7 @@
 import { groq } from 'next-sanity';
 import { readClient } from './lib/client';
 
-interface GetResourcesParams {
-    query: string;
-  }
-
-export const getResources = async () => {
-    //const { query } = params;
-  
+export const getResources = async () => { 
     try {
       const resources = await readClient.fetch(
         groq`*[_type == "resource"]{
@@ -30,8 +24,6 @@ export const getResources = async () => {
 } 
 
 export const getLatestResources = async () => {
-    //const { query } = params;
-  
     try {
       const resources = await readClient.fetch(
         groq`*[_type == "resource"]{
@@ -53,8 +45,6 @@ export const getLatestResources = async () => {
 } 
 
 export const getActivitieslList = async () => {
-  //const { query } = params;
-
   try {
     const activities = await readClient.fetch(
       groq`*[_type == "activities"]{

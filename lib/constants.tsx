@@ -40,24 +40,6 @@ export const NavbarLinks = [
     }
 ]
 
-export const ActivitesList = [
-    {
-        activityName: "Télécom",
-        activityDescription: "Fourniture et installation réseau informatique, point d'accès, tetra radio, serveurs, fibre optique, telephony",
-        image: '/server-image.jpeg'
-    },
-    {
-        activityName: "Systeme d'alarme",
-        activityDescription: "Fourniture et installation de système de vidéosurveillance, contrôle d'accès, lutte contre l'incendie",
-        image: '/fire-alarm-devices-image.jpg'
-    },
-    {
-        activityName: "Electricité bâtiment",
-        activityDescription: "Fourniture et installation matériel électrique basse tension, domotique et éclairage publique",
-        image: '/low-voltage-image.jpg'
-    },
-]
-
 export const clientsLogo = [
     '/logos/mzabi-group-no-bg.png', 
     '/logos/randa-group-no-bg.png',
