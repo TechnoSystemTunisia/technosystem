@@ -1,6 +1,4 @@
-type IconClass = {
-    iconClass:string
-}
+
 
 const InfosIcon = ({iconClass}:IconClass) => {
   return (

@@ -22,21 +22,8 @@ import 'swiper/css/pagination';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-type ProjectProps = {
-        projectName: string,
-        projecDescription: string,
-        projectClient: string,
-        imageUrls: ImageProps[]
-}
-
-type ImageProps = {
-    url: string,
-    width: number,
-    height: number,
-}
   
-
-const ProjectCardVertical = ({ project, index} : {project: ProjectProps, index:number}) => {
+const ProjectCardVertical = ({ project, index} : {project: IProject, index:number}) => {
     const widthHeightRatio = project.imageUrls[0].height / project.imageUrls[0].width
     const galleryHeight = Math.ceil(350 * widthHeightRatio)
     const photoSpans = Math.ceil(galleryHeight / 10) + 1

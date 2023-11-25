@@ -14,8 +14,8 @@ const Navbar = () => {
             <h1 className='text-2xl font-bold font-sans'>Techno System</h1>
         </Link>
         <HomeMenuList/>
-        <div className='hidden lg:flex h-full items-center gap-4 text-xl'>
-            <PhoneIcon iconClass='w-10 h-10 rounded-full border border-black dark:border-white p-1'/>
+        <div className='hidden lg:flex h-full items-center gap-4 text-xl group'>
+            <PhoneIcon iconClass='w-8 h-8 text-blue-500'/>
             <span className='font-bold underline underline-offset-[6px] cursor-pointer'>(+216) 58 021 588</span>
             <DarkModeButton/>
         </div>

@@ -1,6 +1,4 @@
-type IconClass = {
-    iconClass:string
-}
+
 
 const BookOpenIcon = ({iconClass}:IconClass) => {
   return (

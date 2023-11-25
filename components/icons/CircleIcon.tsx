@@ -1,6 +1,4 @@
-type IconClass = {
-    iconClass:string
-}
+
 
 const CircleIcon = ({iconClass}:IconClass) => {
   return (

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { getLatestResources, getResources } from '@/sanity/actions'
 import LoadingSpinner from '../icons/LoadingSpinner'
 
+
 const styles = {
   title:"mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white capitalize",
   subTitle:"mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"
@@ -15,6 +16,7 @@ export const revalidate = 86400;
 
 const PreviousProjects = async () => {
   const projects  = await getLatestResources()
+  
   return (
     <section id='previouProjects' className='flex flex-col items-center justify-center w-full p-4 min-h-[calc(100vh-80px)] border-b-2 border-gray-400 overflow-hidden'>
       <div className='flex w-full h-full justify-center'>
@@ -29,8 +31,8 @@ const PreviousProjects = async () => {
           <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 z-0 w-full'>
             {
               projects?.length > 0 ? 
-              projects.map((project:any, index:number)=>(
-              <ProjectCard key={`projectCard${index}`} project={project} index={index}/>
+              projects.map((project:IProject, index:number)=>(
+              <ProjectCard key={project._id} project={project} index={index}/>
             )):
             <LoadingSpinner/>
             }

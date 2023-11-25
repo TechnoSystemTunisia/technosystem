@@ -51,3 +51,21 @@ export const getLatestResources = async () => {
       alert(`Quelque chose s'est mal passé ${error}, réessayer`);
     }
 } 
+
+export const getActivitieslList = async () => {
+  //const { query } = params;
+
+  try {
+    const activities = await readClient.fetch(
+      groq`*[_type == "activities"]{
+        _id,
+        activityName,
+        activityDescription,
+        "image": poster.asset->url
+      }`
+    ); 
+    return activities;
+  } catch (error) {
+    alert(`Quelque chose s'est mal passé ${error}, réessayer`);
+  }
+} 

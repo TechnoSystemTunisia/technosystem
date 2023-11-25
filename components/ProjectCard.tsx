@@ -13,21 +13,9 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image"
 
-type ProjectProps = {
-    projectName: string,
-    projecDescription: string,
-    projectClient: string,
-    imageUrls: ImageProps[]
-}
-
-type ImageProps = {
-url: string,
-width: number,
-height: number,
-}
   
 
-const ProjectCard = ({ project, index} : {project: ProjectProps, index:number}) => {
+const ProjectCard = ({ project, index} : {project: IProject, index:number}) => {
     const variants = {
         hidden: { opacity: 0, x: "100%" },
         visible: { opacity: 1, x: 0 },

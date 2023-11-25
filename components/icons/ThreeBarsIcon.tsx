@@ -1,6 +1,4 @@
-type IconClass = {
-    iconClass:string
-}
+
 
 const ThreeBarsIcon = ({iconClass}:IconClass) => {
   return (
